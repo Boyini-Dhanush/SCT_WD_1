@@ -1,0 +1,717 @@
+/* ===========================
+   GOOGLE FONT & RESET
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#ffffff;
+    color:#222;
+    transition:0.4s;
+}
+
+/* ===========================
+   NAVIGATION BAR
+=========================== */
+
+nav{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 8%;
+    background:transparent;
+    transition:.4s;
+    z-index:1000;
+}
+
+nav.scrolled{
+    background:#2563EB;
+    box-shadow:0 5px 15px rgba(0,0,0,.2);
+}
+
+.logo{
+    font-size:32px;
+    font-weight:700;
+    color:white;
+}
+
+.nav-links{
+    display:flex;
+    list-style:none;
+    align-items:center;
+}
+
+.nav-links li{
+    margin-left:25px;
+}
+
+.nav-links a{
+
+    text-decoration:none;
+    color:white;
+    font-weight:500;
+    transition:.3s;
+
+}
+
+.nav-links a:hover{
+
+    color:#FFD700;
+
+}
+
+#darkModeToggle{
+
+    color:white;
+    cursor:pointer;
+    font-size:20px;
+
+}
+
+#darkModeToggle:hover{
+
+    color:#FFD700;
+
+}
+
+/* ===========================
+   HERO SECTION
+=========================== */
+
+.hero{
+
+height:100vh;
+
+background:
+linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),
+url("https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1500&q=80");
+
+background-size:cover;
+
+background-position:center;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+text-align:center;
+
+padding:20px;
+
+color:white;
+
+}
+
+.hero-content{
+
+max-width:850px;
+
+}
+
+.hero h1{
+
+font-size:65px;
+
+margin-bottom:15px;
+
+}
+
+.hero h2{
+
+font-size:40px;
+
+margin-bottom:20px;
+
+color:#FFD700;
+
+}
+
+.hero p{
+
+font-size:20px;
+
+line-height:1.8;
+
+margin-bottom:35px;
+
+}
+
+/* ===========================
+   BUTTON
+=========================== */
+
+.btn{
+
+display:inline-block;
+
+padding:15px 40px;
+
+background:#2563EB;
+
+color:white;
+
+text-decoration:none;
+
+border-radius:40px;
+
+transition:.4s;
+
+font-size:18px;
+
+font-weight:600;
+
+}
+
+.btn:hover{
+
+background:#0f4fc9;
+
+transform:translateY(-5px);
+
+box-shadow:0 12px 20px rgba(0,0,0,.25);
+
+}
+/* ===========================
+   COMMON SECTIONS
+=========================== */
+
+.section{
+    padding:100px 10%;
+    text-align:center;
+}
+
+.section h2{
+    font-size:40px;
+    color:#2563EB;
+    margin-bottom:20px;
+}
+
+.section p{
+    max-width:900px;
+    margin:auto;
+    line-height:1.8;
+    font-size:18px;
+    color:#555;
+}
+
+/* ===========================
+   FEATURE CARDS
+=========================== */
+
+.service-container{
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:30px;
+    margin-top:50px;
+    flex-wrap:wrap;
+
+}
+
+.service-box{
+
+    width:320px;
+    background:white;
+    border-radius:15px;
+    padding:35px 25px;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+    transition:.4s;
+
+}
+
+.service-box:hover{
+
+    transform:translateY(-12px);
+
+    box-shadow:0 15px 35px rgba(0,0,0,.15);
+
+}
+
+.service-box i{
+
+    font-size:50px;
+    color:#2563EB;
+    margin-bottom:20px;
+
+}
+
+.service-box h3{
+
+    font-size:24px;
+    margin-bottom:15px;
+
+}
+
+.service-box p{
+
+    font-size:16px;
+    color:#666;
+
+}
+
+/* ===========================
+   CONTACT FORM
+=========================== */
+
+.contact-form{
+
+    max-width:650px;
+    margin:40px auto;
+
+}
+
+.contact-form input,
+.contact-form textarea{
+
+    width:100%;
+    padding:16px;
+    margin-bottom:20px;
+    border-radius:10px;
+    border:1px solid #ddd;
+    font-size:16px;
+    outline:none;
+    transition:.3s;
+
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus{
+
+    border-color:#2563EB;
+
+    box-shadow:0 0 10px rgba(37,99,235,.3);
+
+}
+
+.contact-form button{
+
+    border:none;
+    cursor:pointer;
+
+}
+
+/* ===========================
+   FOOTER
+=========================== */
+
+footer{
+
+    background:#111827;
+    color:white;
+    text-align:center;
+    padding:50px 20px;
+
+}
+
+footer h2{
+
+    margin-bottom:15px;
+
+}
+
+footer p{
+
+    margin:10px 0;
+
+}
+
+.social-icons{
+
+    margin:25px 0;
+
+}
+
+.social-icons a{
+
+    display:inline-block;
+    color:white;
+    font-size:24px;
+    margin:0 15px;
+    transition:.3s;
+
+}
+
+.social-icons a:hover{
+
+    color:#FFD700;
+    transform:scale(1.2);
+
+}
+
+/* ===========================
+   BACK TO TOP BUTTON
+=========================== */
+
+#topBtn{
+
+    position:fixed;
+    right:25px;
+    bottom:25px;
+    width:55px;
+    height:55px;
+    border:none;
+    border-radius:50%;
+    background:#2563EB;
+    color:white;
+    cursor:pointer;
+    display:none;
+    font-size:20px;
+    transition:.3s;
+    z-index:999;
+
+}
+
+#topBtn:hover{
+
+    background:#1d4ed8;
+
+    transform:translateY(-5px);
+
+}
+
+/* ===========================
+   SCROLL ANIMATION
+=========================== */
+
+.reveal{
+
+    opacity:0;
+    transform:translateY(80px);
+    transition:all 1s ease;
+
+}
+
+.reveal.active{
+
+    opacity:1;
+    transform:translateY(0);
+
+}
+/* ===========================
+   DARK MODE
+=========================== */
+
+body.dark{
+    background:#0f172a;
+    color:white;
+}
+
+body.dark .section{
+    background:#0f172a;
+}
+
+body.dark .section h2{
+    color:#38bdf8;
+}
+
+body.dark .section p{
+    color:#d1d5db;
+}
+
+body.dark .service-box{
+    background:#1e293b;
+    color:white;
+}
+
+body.dark .service-box p{
+    color:#d1d5db;
+}
+
+body.dark .contact-form input,
+body.dark .contact-form textarea{
+
+    background:#1e293b;
+    color:white;
+    border:1px solid #334155;
+
+}
+
+body.dark footer{
+
+    background:#020617;
+
+}
+
+body.dark nav.scrolled{
+
+    background:#1e293b;
+
+}
+
+
+/* ===========================
+   HAMBURGER MENU
+=========================== */
+
+.hamburger{
+
+    display:none;
+    flex-direction:column;
+    cursor:pointer;
+
+}
+
+.hamburger span{
+
+    width:30px;
+    height:3px;
+    background:white;
+    margin:5px 0;
+    transition:.4s;
+
+}
+
+
+/* ===========================
+   RESPONSIVE DESIGN
+=========================== */
+
+@media(max-width:992px){
+
+.hero h1{
+
+font-size:48px;
+
+}
+
+.hero h2{
+
+font-size:30px;
+
+}
+
+.section{
+
+padding:80px 8%;
+
+}
+
+.service-container{
+
+flex-direction:column;
+
+}
+
+.service-box{
+
+width:100%;
+
+}
+
+}
+
+
+@media(max-width:768px){
+
+nav{
+
+padding:18px 6%;
+
+}
+
+.hamburger{
+
+display:flex;
+
+}
+
+.nav-links{
+
+position:absolute;
+
+top:80px;
+
+left:-100%;
+
+width:100%;
+
+background:#2563EB;
+
+flex-direction:column;
+
+padding:30px 0;
+
+transition:.4s;
+
+}
+
+.nav-links.active{
+
+left:0;
+
+}
+
+.nav-links li{
+
+margin:18px 0;
+
+}
+
+.hero h1{
+
+font-size:40px;
+
+}
+
+.hero h2{
+
+font-size:26px;
+
+}
+
+.hero p{
+
+font-size:17px;
+
+}
+
+.section h2{
+
+font-size:32px;
+
+}
+
+}
+
+
+@media(max-width:480px){
+
+.hero h1{
+
+font-size:34px;
+
+}
+
+.hero h2{
+
+font-size:22px;
+
+}
+
+.hero p{
+
+font-size:16px;
+
+}
+
+.btn{
+
+padding:14px 28px;
+
+font-size:16px;
+
+}
+
+.logo{
+
+font-size:26px;
+
+}
+
+}
+
+
+/* ===========================
+   EXTRA ANIMATIONS
+=========================== */
+
+.service-box{
+
+animation:fadeIn .8s ease;
+
+}
+
+@keyframes fadeIn{
+
+from{
+
+opacity:0;
+
+transform:translateY(40px);
+
+}
+
+to{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+}
+
+.btn{
+
+animation:pulse 2s infinite;
+
+}
+
+@keyframes pulse{
+
+0%{
+
+box-shadow:0 0 0 0 rgba(37,99,235,.5);
+
+}
+
+70%{
+
+box-shadow:0 0 0 18px rgba(37,99,235,0);
+
+}
+
+100%{
+
+box-shadow:0 0 0 0 rgba(37,99,235,0);
+
+}
+
+}
+
+
+/* ===========================
+   SCROLLBAR
+=========================== */
+
+::-webkit-scrollbar{
+
+width:10px;
+
+}
+
+::-webkit-scrollbar-track{
+
+background:#ddd;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+background:#2563EB;
+
+border-radius:10px;
+
+}
+
+::-webkit-scrollbar-thumb:hover{
+
+background:#1d4ed8;
+
+}
